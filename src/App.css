@@ -1,0 +1,67 @@
+:root{
+  --primary: rgb(126, 84, 6);
+  --secondary: black;
+  --white: whitesmoke;
+  --gap: 15px;
+  --border-radius:10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--white);
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  padding: 0px ;
+}
+hr{
+  border: 2px solid rgb(173, 116, 8);
+  width: 100px;
+  margin: var(--gap) auto;
+  
+}
+h3::first-letter{
+  text-transform: capitalize;
+}
+.shopping-list{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+  margin: var(--gap);
+}
+.message{
+  color: var(--primary);
+}
+.card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--gap);
+  padding: var(--gap);
+}
+.shopping-list-item{
+  text-decoration: none;
+  padding: 20px 30px;
+  color:var(--primary);
+  font-size: 50px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
